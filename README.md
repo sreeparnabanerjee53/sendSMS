@@ -2,6 +2,11 @@
 ### Prerequisite:
     Requires Node 8 or higher
 
+### Getting Started:
+    git clone https://github.com/sreeparnabanerjee53/sendSMS.git
+    cd sendSMS/MoneyouMessaging
+    npm install
+
 ### Deploy to AWS:
     npm run deploy
     This will use serverless to deploy the API as described in serverless.yml.
