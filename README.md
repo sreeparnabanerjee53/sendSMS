@@ -8,6 +8,7 @@
     npm install
 
 ### Deploy to AWS:
+    serverless config credentials --provider aws --key AWS_ACCESS_KEY --secret AWS_SECRET_KEY
     npm run deploy
     This will use serverless to deploy the API as described in serverless.yml.
 
