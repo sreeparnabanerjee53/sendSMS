@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Assignment for Moneyou",
   "author": "Sreeparna",
-  "main": "handler.js",
+  "main": "src/handler.js",
   "scripts": {
     "deploy": "serverless deploy",
     "test": "./node_modules/.bin/mocha --recursive"

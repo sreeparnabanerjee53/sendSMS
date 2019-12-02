@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 const LambdaTester = require('lambda-tester');
-const sendSms = require('../handler.js');
+const sendSms = require('..');
 const proxyquire = require('proxyquire').noCallThru();
 
 const sinon = require('sinon');
@@ -44,7 +44,7 @@ describe('handler', function () {
             DynamoDB: sinon.stub().returns()
         };
 
-        lambda = proxyquire('../handler', {
+        lambda = proxyquire('../src/handler', {
             'aws-sdk': AWSStub,
             '@aws/dynamodb-data-mapper': mapperStub
         });
