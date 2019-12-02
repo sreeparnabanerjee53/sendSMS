@@ -1,0 +1,12 @@
+{
+  "name": "moneyoumessaging",
+  "version": "1.0.0",
+  "description": "Assignment for Moneyou",
+  "author": "Sreeparna",
+  "main": "handler.js",
+  "dependencies": {
+    "@aws/dynamodb-data-mapper": "^0.7.3",
+    "jsonschema": "^1.2.5",
+    "aws-sdk": "^2.7.9"
+  }
+}
