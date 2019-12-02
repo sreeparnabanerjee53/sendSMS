@@ -61,6 +61,20 @@ GetSMS:
           method: get
           integration: lambda
 ```
+API Key is generated with the specific usage plan:
+```yaml
+apiKeys:
+    - moneyou
+  usagePlan:
+    quota:
+      limit: 1000
+      offset: 2
+      period: MONTH
+    throttle:
+      burstLimit: 100
+      rateLimit: 50
+```
+
 ### Storage
 - - - -
 For storage, AWS DynamoDB a managed serverless NoSQL database is used. Tables are created to store phoneNumber, message and messageId also described in serverless.yml file. For example:
