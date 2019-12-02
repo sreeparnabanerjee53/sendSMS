@@ -42,11 +42,8 @@ exports.send = async (event) => {
         response.messageId = data.MessageId;
         response.result = 'Success';
         response.statusCode = 200;
-
     } catch (e) {
-        response.result = e.errorMessage;
-        const err = new Error(e.stack);
-        throw err;
+        throw e;
     }
     return response;
 };

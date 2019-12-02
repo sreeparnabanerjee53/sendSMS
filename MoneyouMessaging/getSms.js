@@ -18,9 +18,7 @@ exports.getSms = async (event) => {
         response.result = fetchedMessages;
 
     } catch (e) {
-        response.result = e.errorMessage;
-        const err = new Error(e.stack);
-        throw err;
+        throw e;
     }
     return response;
 };
