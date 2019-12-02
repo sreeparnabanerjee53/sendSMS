@@ -20,11 +20,11 @@
 - - - -
 ### Overview
 This repo uses Serverless Framework to describe, test and deploy the REST API to AWS Lambda. AWS Lambda provides "serverless" cloud functions as a service. AWS API Gateway is used to expose the deployed Lambda functions as a HTTP REST API.
-SNS SMS sending capability is used to send SMS. DynamoDB is used for persistence.
-APIs are secured using API Key only.
-Request header:
-Content-Type : application/json
-x-api-key : 'Your API-KEY shared with you or generated after deploy'
+SNS SMS sending capability is used to send SMS. <br/> DynamoDB is used for persistence. <br/>
+APIs are secured using API Key only. <br/>
+Request header: <br/>
+#### Content-Type : application/json
+#### x-api-key : 'Your API-KEY shared with you or generated after deploy' <br/>
 Request body is validated on , the api throws Bad Request if not in the below format: 
 ```
 {
